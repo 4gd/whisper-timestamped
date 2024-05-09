@@ -900,7 +900,7 @@ def _transcribe_timestamped_efficient(
     l2 = len(timestamped_word_segments)
     if l1 != l2 and l1 != 0:
         logger.warning(f"Inconsistent number of segments: whisper_segments ({l1}) != timestamped_word_segments ({l2})")
-        if (l2 == 0)
+        if (l2 == 0):
             logger.warning("Forgetting the whisper_segments...")
             transcription["segments"] = []
         else
